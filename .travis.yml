@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 8
+cache:
+  directories:
+    - server/node_modules
+    - web/node_modules
+env:
+  - TEST_DIR=server
+  - TEST_DIR=web
+script:
+  - cd $TEST_DIR && yarn && yarn test
