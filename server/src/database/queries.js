@@ -9,5 +9,14 @@ const conn = mysql.createPool({
 });
 
 module.exports = {
-
+  getScooters: info => conn
+    .query(
+      `SELECT * FROM scooter WHERE 
+       ST_Distance_Sphere(scooter.position, POINT(?, ?)) <= ? ORDER BY ST_Distance_Sphere(scooter.position, POINT(?, ?)) LIMIT ?`,
+      [info.lng, info.lat, info.within, info.lng, info.lat, Number(info.count)],
+    )
+    .map(scooter => ({
+      ...scooter,
+      position: { lng: scooter.position.x, lat: scooter.position.y },
+    })),
 };

@@ -3,6 +3,8 @@
 ## Web
 
 - `yarn install`
+- Set environment variable
+  - `REACT_APP_GOOGLE_API_KEY`: Google API key with Maps JavaScript API enabled
 
 ## Server
 
