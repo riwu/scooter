@@ -11,6 +11,7 @@ Fetches the closest `x` scooters for a given position (specified by latitude and
 - `yarn install`
 - Set environment variable
   - `REACT_APP_GOOGLE_API_KEY`: Google API key with Maps JavaScript API enabled
+  - `REACT_APP_API_URL`: API URL
 
 ### Server
 

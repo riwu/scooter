@@ -28,14 +28,6 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.0"
   },
-  "proxy": {
-    "/api": {
-      "target": "http://localhost:3000",
-      "pathRewrite": {
-        "^/api": ""
-      }
-    }
-  },
   "browserslist": [
     ">0.25%",
     "not op_mini all",
