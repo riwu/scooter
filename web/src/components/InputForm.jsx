@@ -18,8 +18,8 @@ const InputForm = ({ form, onSubmit, className }) => (
     {[
       { label: 'Latitude', key: 'lat', default: 1.294 },
       { label: 'Longitude', key: 'lng', default: 103.776 },
-      { label: 'Within (meters)', key: 'within', default: 5000 },
-      { label: 'Count', key: 'count', default: 5 },
+      { label: 'Within (meters)', key: 'within', default: 10000 },
+      { label: 'Count', key: 'count', default: 20 },
     ].map(item => (
       <Form.Item {...item}>
         {form.getFieldDecorator(item.key, {
