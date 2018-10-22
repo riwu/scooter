@@ -38,5 +38,6 @@ To plot all the scooters in Singapore (hundreds of thousands) for the operations
 
 ### Database
 
+- Add spatial index for coordinates column
 - Master-Slave Replication to distribute read-only queries across multiple replicated databases
 - Use in-memory database if server has sufficient memory
