@@ -9,6 +9,7 @@ class Home extends React.Component {
   state = {
     data: [],
   };
+
   render() {
     return (
       <div>
